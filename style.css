@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+body {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #1d1162;
+    font-size: 18px;
+    line-height: 1.4rem;
+
+    > header,
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+body > header {
+    width: 100%;
+    border-bottom: thin solid white;
+
+    * {
+        margin: 1rem 0;
+    }
+
+    nav {
+        a:not(:last-child) {
+            margin-right: 0.3rem;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+body > footer {
+    height: 100px;
+    border-top: thin solid white;
+
+    section {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            margin: 0;
+        }
+    }
+}
+
+article {
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+
+    h2,
+    h3,
+    h4 {
+        margin: 1.5rem 0;
+    }
+
+    .einleitung {
+        figure {
+            border: thin solid white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+
+            blockquote {
+                padding-left: 1rem;
+            }
+        }
+    }
+
+    .info-abschnitt {
+        figure {
+            display: flex;
+            flex-direction: column;
+
+            figcaption {
+                font: italic smaller sans-serif;
+                padding: 3px;
+                text-align: center;
+                background-color: black;
+                margin-bottom: 1rem;
+            }
+        }
+
+        details {
+            border: thin solid white;
+            padding: 1rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            cursor: pointer;
+
+            p {
+                margin: 1rem 0;
+            }
+
+            summary,
+            strong {
+                color: red;
+            }
+        }
+    }
+
+    hr {
+        margin: 2rem 0;
+    }
+
+    .kommentare {
+        padding-bottom: 1rem;
+
+        article {
+            width: 100%;
+
+            span {
+                font-weight: bold;
+            }
+
+            footer {
+                margin: 1rem 0;
+            }
+        }
+    }
+}
+
